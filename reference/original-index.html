@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaGraphAI - Revolutionary Graph Intelligence Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.svg" alt="MetaGraphAI" class="logo">
+                <span class="brand-name">MetaGraphAI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Revolutionary Graph Intelligence
+                    <span class="gradient-text">Transforming Complex Networks</span>
+                </h1>
+                <p class="hero-description">
+                    MetaGraphAI delivers breakthrough graph-based AI solutions that unlock unprecedented insights 
+                    across cybersecurity, finance, and research domains. Our proprietary neural network architecture 
+                    processes vast interconnected datasets in real-time, discovering hidden patterns that traditional 
+                    systems cannot detect.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Patents Pending</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Events/Minute</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.5%</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#solutions" class="btn-primary">Explore Solutions</a>
+                    <a href="#technology" class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                        View Technology
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="graph-visualization">
+                    <svg viewBox="0 0 800 700" class="neural-graph">
+                        <!-- Background Grid -->
+                        <defs>
+                            <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+                                <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(99, 102, 241, 0.2)" stroke-width="0.5"/>
+                                <circle cx="12.5" cy="12.5" r="0.5" fill="rgba(6, 182, 212, 0.3)"/>
+                            </pattern>
+                            
+                            <pattern id="techGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                <rect width="50" height="50" fill="none" stroke="rgba(16, 185, 129, 0.1)" stroke-width="0.5"/>
+                                <circle cx="25" cy="25" r="1" fill="rgba(16, 185, 129, 0.2)" opacity="0.6">
+                                    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+                                </circle>
+                            </pattern>
+                            
+                            <!-- Gradients -->
+                            <linearGradient id="nodeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="nodeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#0066ff;stop-opacity:0.8" />
+                                <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.4" />
+                                <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+                            </linearGradient>
+                            
+                            <!-- Glow Filter -->
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge> 
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Background -->
+                        <rect width="100%" height="100%" fill="url(#grid)" opacity="0.08"/>
+                        
+                        <!-- Connection Lines -->
+                        <g class="connections">
+                            <!-- Data flow lines -->
+                            <path d="M 160 180 Q 320 140 480 180" stroke="url(#connectionGradient)" stroke-width="6" fill="none" class="data-flow flow-1">
+                                <animate attributeName="stroke-dasharray" values="0,160;35,160;0,160" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="stroke-dashoffset" values="0;-35;-70" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <path d="M 215 320 Q 380 280 540 280" stroke="url(#connectionGradient)" stroke-width="5.5" fill="none" class="data-flow flow-2">
+                                <animate attributeName="stroke-dasharray" values="0,140;30,140;0,140" dur="2.5s" repeatCount="indefinite"/>
+                                <animate attributeName="stroke-dashoffset" values="0;-30;-60" dur="2.5s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <path d="M 295 450 Q 440 420 580 420" stroke="url(#connectionGradient)" stroke-width="5" fill="none" class="data-flow flow-3">
+                                <animate attributeName="stroke-dasharray" values="0,120;25,120;0,120" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="stroke-dashoffset" values="0;-25;-50" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            
+                            <!-- Network connections -->
+                            <line x1="100" y1="150" x2="150" y2="250" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" class="network-link"/>
+                            <line x1="300" y1="150" x2="350" y2="220" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" class="network-link"/>
+                            <line x1="350" y1="220" x2="400" y2="300" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" class="network-link"/>
+                            <line x1="150" y1="250" x2="200" y2="320" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" class="network-link"/>
+                            <line x1="300" y1="150" x2="200" y2="320" stroke="rgba(99, 102, 241, 0.2)" stroke-width="1" class="network-link"/>
+                        </g>
+                        
+                        <!-- Central Processing Hub -->
+                        <g class="central-hub">
+                            <circle cx="400" cy="350" r="80" fill="url(#nodeGradient1)" filter="url(#glow)" class="hub-core">
+                                <animate attributeName="r" values="80;95;80" dur="4s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="400" cy="350" r="65" fill="rgba(255,255,255,0.25)" class="hub-inner"/>
+                            <text x="400" y="350" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="22" font-weight="bold">AI</text>
+                            
+                            <!-- Processing indicators -->
+                            <g class="processing-rings">
+                                <circle cx="400" cy="350" r="110" fill="none" stroke="rgba(99, 102, 241, 0.6)" stroke-width="3" stroke-dasharray="15,15">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 400 350;360 400 350" dur="8s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="400" cy="350" r="135" fill="none" stroke="rgba(6, 182, 212, 0.6)" stroke-width="3" stroke-dasharray="12,18">
+                                    <animateTransform attributeName="transform" type="rotate" values="360 400 350;0 400 350" dur="12s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="400" cy="350" r="160" fill="none" stroke="rgba(16, 185, 129, 0.5)" stroke-width="2" stroke-dasharray="8,22">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 400 350;360 400 350" dur="15s" repeatCount="indefinite"/>
+                                </circle>
+                            </g>
+                        </g>
+                        
+                        <!-- Input Nodes -->
+                        <g class="input-nodes">
+                            <!-- Cybersecurity Node -->
+                            <circle cx="120" cy="180" r="40" fill="url(#nodeGradient1)" filter="url(#glow)" class="input-node cyber">
+                                <animate attributeName="r" values="40;45;40" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="120" cy="180" r="30" fill="rgba(255,255,255,0.2)"/>
+                            <text x="120" y="180" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="24">🛡️</text>
+                            <text x="120" y="210" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Cyber</text>
+                            
+                            <!-- Financial Node -->
+                            <circle cx="180" cy="320" r="35" fill="url(#nodeGradient2)" filter="url(#glow)" class="input-node finance">
+                                <animate attributeName="r" values="35;40;35" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="180" cy="320" r="26" fill="rgba(255,255,255,0.2)"/>
+                            <text x="180" y="320" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="22">💹</text>
+                            <text x="180" y="355" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Finance</text>
+                            
+                            <!-- Research Node -->
+                            <circle cx="260" cy="450" r="32" fill="url(#nodeGradient1)" filter="url(#glow)" class="input-node research">
+                                <animate attributeName="r" values="32;37;32" dur="3.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="260" cy="450" r="24" fill="rgba(255,255,255,0.2)"/>
+                            <text x="260" y="450" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="20">🔬</text>
+                            <text x="260" y="485" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Research</text>
+                        </g>
+                        
+                        <!-- Output Nodes -->
+                        <g class="output-nodes">
+                            <!-- Intelligence Output -->
+                            <circle cx="480" cy="180" r="38" fill="url(#nodeGradient2)" filter="url(#glow)" class="output-node intelligence">
+                                <animate attributeName="r" values="38;43;38" dur="2.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="480" cy="180" r="28" fill="rgba(255,255,255,0.2)"/>
+                            <text x="480" y="180" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="22">🧠</text>
+                            <text x="480" y="210" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Intelligence</text>
+                            
+                            <!-- Analytics Output -->
+                            <circle cx="540" cy="280" r="34" fill="url(#nodeGradient1)" filter="url(#glow)" class="output-node analytics">
+                                <animate attributeName="r" values="34;39;34" dur="3.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="540" cy="280" r="25" fill="rgba(255,255,255,0.2)"/>
+                            <text x="540" y="280" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="20">📊</text>
+                            <text x="540" y="315" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Analytics</text>
+                            
+                            <!-- Insights Output -->
+                            <circle cx="580" cy="420" r="36" fill="url(#nodeGradient2)" filter="url(#glow)" class="output-node insights">
+                                <animate attributeName="r" values="36;41;36" dur="2.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="580" cy="420" r="27" fill="rgba(255,255,255,0.2)"/>
+                            <text x="580" y="420" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="22">💡</text>
+                            <text x="580" y="455" text-anchor="middle" fill="#374151" font-size="14" font-weight="600">Insights</text>
+                        </g>
+                        
+                        <!-- Data Particles -->
+                        <g class="data-particles">
+                            <circle cx="120" cy="180" r="2" fill="#0066ff" opacity="0.8">
+                                <animateMotion dur="4s" repeatCount="indefinite" path="M0,0 Q130,50 200,20 T280,30"/>
+                                <animate attributeName="opacity" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="170" cy="280" r="1.5" fill="#6366f1" opacity="0.6">
+                                <animateMotion dur="3s" repeatCount="indefinite" path="M0,0 Q100,-50 180,-80 T320,-60"/>
+                                <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="220" cy="340" r="2.5" fill="#06b6d4" opacity="0.7">
+                                <animateMotion dur="5s" repeatCount="indefinite" path="M0,0 Q80,-40 150,-20 T280,-40"/>
+                                <animate attributeName="opacity" values="0.7;0.3;0.7" dur="5s" repeatCount="indefinite"/>
+                            </circle>
+                        </g>
+                        
+                        <!-- Performance Metrics -->
+                        <g class="metrics-display">
+                            <text x="450" y="50" text-anchor="middle" fill="#374151" font-size="10" font-weight="500">Real-time Processing</text>
+                            <text x="450" y="65" text-anchor="middle" fill="#0066ff" font-size="12" font-weight="bold">
+                                <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                                50K+ events/min
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Platform -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionary Graph Technology Platform</h2>
+                <p class="section-description">
+                    Our proprietary graph neural network architecture represents the next evolution in AI-driven analytics,
+                    capable of processing complex interconnected systems with unprecedented speed and accuracy.
+                </p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card featured">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced Graph Neural Networks</h3>
+                    <p>Proprietary algorithms optimized for real-time analysis of complex interconnected systems, 
+                       identifying patterns invisible to traditional approaches.</p>
+                    <div class="tech-specs">
+                        <span class="spec">512D Embeddings</span>
+                        <span class="spec">Multi-Head Attention</span>
+                        <span class="spec">Real-time Processing</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Multi-dimensional Pattern Recognition</h3>
+                    <p>Identifies subtle correlations across disparate data sources, revealing critical insights 
+                       that drive strategic decision-making.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Predictive Modeling Engine</h3>
+                    <p>Forecasts future states with high accuracy using historical and real-time data, 
+                       enabling proactive strategic planning.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Adaptive Learning Systems</h3>
+                    <p>Continuously evolving algorithms that improve performance over time, 
+                       adapting to new patterns and emerging threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Portfolio -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Strategic Intelligence Solutions</h2>
+                <p class="section-description">
+                    Built on our revolutionary graph technology platform, each solution delivers transformative 
+                    capabilities tailored to specific industry challenges and opportunities.
+                </p>
+            </div>
+            
+            <div class="solutions-grid">
+                <!-- CyberWatch - Active Solution -->
+                <div class="solution-card active">
+                    <div class="solution-status">
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <div class="solution-header">
+                        <h3>CyberWatch</h3>
+                        <span class="solution-category">Cybersecurity Intelligence</span>
+                    </div>
+                    <p class="solution-description">
+                        Revolutionary cybersecurity platform combining advanced AI with real-time threat prediction. 
+                        Transforms cybersecurity from reactive monitoring to proactive strategic intelligence.
+                    </p>
+                    <div class="solution-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Real-time Threat Detection</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network Graph Analysis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Strategic Intelligence</span>
+                        </div>
+                    </div>
+                    <div class="solution-impact">
+                        <div class="impact-metric">
+                            <span class="metric-value">99.2%</span>
+                            <span class="metric-label">Threat Detection Rate</span>
+                        </div>
+                        <div class="impact-metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">False Positive Reduction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Financial Intelligence - Future -->
+                <div class="solution-card future">
+                    <div class="solution-status">
+                        <span class="status-badge future">Coming Soon</span>
+                    </div>
+                    <div class="solution-header">
+                        <h3>FinanceWatch</h3>
+                        <span class="solution-category">Financial Intelligence</span>
+                    </div>
+                    <p class="solution-description">
+                        Next-generation financial intelligence platform delivering Event-to-Market insights. 
+                        Transforms market analysis through advanced graph correlation and game theory modeling.
+                    </p>
+                    <div class="solution-features">
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Event-to-Market Intelligence</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calculator"></i>
+                            <span>Game Theory Analysis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Global Market Correlation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Strategic Recommendations</span>
+                        </div>
+                    </div>
+                    <div class="solution-roadmap">
+                        <span class="roadmap-item">Q2 2025: Pilot Phase</span>
+                        <span class="roadmap-item">Q4 2025: General Availability</span>
+                    </div>
+                </div>
+                
+                <!-- Research Intelligence - Future -->
+                <div class="solution-card future">
+                    <div class="solution-status">
+                        <span class="status-badge future">In Development</span>
+                    </div>
+                    <div class="solution-header">
+                        <h3>ResearchGraph</h3>
+                        <span class="solution-category">Research Intelligence</span>
+                    </div>
+                    <p class="solution-description">
+                        Advanced research management platform utilizing graph intelligence to accelerate discovery 
+                        and optimize research portfolios across multiple disciplines and institutions.
+                    </p>
+                    <div class="solution-features">
+                        <div class="feature">
+                            <i class="fas fa-microscope"></i>
+                            <span>Research Portfolio Analysis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Collaboration Networks</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Innovation Acceleration</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-database"></i>
+                            <span>Knowledge Graph Mining</span>
+                        </div>
+                    </div>
+                    <div class="solution-roadmap">
+                        <span class="roadmap-item">Q3 2025: Research Phase</span>
+                        <span class="roadmap-item">2026: Beta Program</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation & IP -->
+    <section id="innovation" class="innovation">
+        <div class="container">
+            <div class="innovation-content">
+                <div class="innovation-text">
+                    <h2 class="section-title">Leading Innovation in Graph Intelligence</h2>
+                    <p class="section-description">
+                        Our research and development efforts focus on pushing the boundaries of what's possible 
+                        with graph-based artificial intelligence, developing proprietary technologies that 
+                        deliver measurable competitive advantages.
+                    </p>
+                    
+                    <div class="innovation-highlights">
+                        <div class="highlight">
+                            <h4>Intellectual Property Portfolio</h4>
+                            <p>Three patent applications: one for core MetaGraphAI technology platform and two for 
+                               cybersecurity-specific implementations, protecting our innovative approaches to graph-based intelligence.</p>
+                        </div>
+                        
+                        <div class="highlight">
+                            <h4>Strategic Partnership Vision</h4>
+                            <p>Actively pursuing collaborative opportunities with leading academic institutions and industry partners 
+                               to accelerate innovation and expand market reach in graph-based AI applications.</p>
+                        </div>
+                        
+                        <div class="highlight">
+                            <h4>Continuous Innovation</h4>
+                            <p>Ongoing investment in R&D ensures our technology platform remains at the forefront 
+                               of graph intelligence capabilities and market applications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="innovation-metrics">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-patent"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-number">3</span>
+                            <span class="metric-label">Patents Pending</span>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-number">100K+</span>
+                            <span class="metric-label">Lines of Code</span>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-number">3+</span>
+                            <span class="metric-label">Years R&D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Transforming Intelligence Through Revolutionary Graph Technology</h2>
+                    <p class="section-description">
+                        MetaGraphAI represents the next evolution in intelligent systems, delivering breakthrough 
+                        solutions that transform how organizations understand, analyze, and act upon complex 
+                        interconnected data. Our proprietary technology unlocks unprecedented insights across 
+                        multiple industries and applications.
+                    </p>
+                    
+                    <div class="value-propositions">
+                        <div class="value-prop">
+                            <div class="value-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Market Leadership</h4>
+                                <p>First-mover advantage in graph-based intelligence solutions with proven 
+                                   commercial success and expanding market opportunities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-prop">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-check"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Validated Technology</h4>
+                                <p>Advanced algorithms and architectures successfully validated through comprehensive 
+                                   simulations, demonstrating strong performance indicators for real-world deployment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-prop">
+                            <div class="value-icon">
+                                <i class="fas fa-chart-growth"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Scalable Growth</h4>
+                                <p>Platform architecture designed for rapid scaling across multiple verticals 
+                                   and geographic markets with established expansion roadmap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Strategic Partnerships & Investment Opportunities</h2>
+                    <p class="section-description">
+                        We partner with forward-thinking organizations and investors who share our vision 
+                        for transforming intelligence through revolutionary graph technology.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Business Inquiries</span>
+                                <a href="mailto:partnerships@metagraphai.com" class="method-value">partnerships@metagraphai.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Direct Line</span>
+                                <a href="tel:+972-50-123-4567" class="method-value">+972-50-123-4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <span class="method-label">Professional Network</span>
+                                <a href="#" class="method-value">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <p class="cta-text">
+                            Ready to explore how MetaGraphAI can transform your organization's intelligence capabilities?
+                        </p>
+                        <a href="mailto:partnerships@metagraphai.com" class="btn-primary">
+                            Schedule Strategic Discussion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="MetaGraphAI" class="footer-logo">
+                    <span class="footer-brand-name">MetaGraphAI</span>
+                    <p class="footer-tagline">Transforming Intelligence Through Revolutionary Graph Technology</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>Technology</h5>
+                        <a href="#technology">Platform Overview</a>
+                        <a href="#innovation">Research & IP</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h5>Solutions</h5>
+                        <a href="#solutions">CyberWatch</a>
+                        <a href="#solutions">FinanceWatch</a>
+                        <a href="#solutions">ResearchGraph</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h5>Company</h5>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="mailto:partnerships@metagraphai.com">Partnerships</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MetaGraphAI. All rights reserved. | Proprietary technology protected by pending patents.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
