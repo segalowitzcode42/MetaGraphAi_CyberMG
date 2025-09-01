@@ -1,0 +1,19 @@
+> איך הפרוייקט?
+
+⏺ List(.)
+  ⎿ Listed 92    (ctrl+r to     
+
+⏺ Read(README.md)
+  ⎿  Read 135 lines (ctrl+r to 
+
+⏺ Read(package.json)
+  ⎿ Read 74 lines (ctrl+r to    
+
+⏺ פרוייקט MetaGraphAI - אתר
+  מודרני עם Next.js 15,
+  TypeScript ו-Tailwind CSS.
+  כולל קומפוננטים אינטראקטיביים,
+   ויזואליזציה של גרפים
+  נוירליים, תמיכה בתמה
+  כהה/בהירה, ואופטימיזציה
+  לביצועים.ksjhfksjhfkljsdhfkjdshjkf
